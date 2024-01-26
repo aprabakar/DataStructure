@@ -57,7 +57,6 @@ return vector<int>(result.begin() , result.end());
 
 // https://leetcode.com/problems/4sum/description/?envType=list&envId=504wrexe
 
-
 int n = nums.size();
         sort(nums.begin(), nums.end());
         vector<vector<int>> output;
@@ -84,3 +83,19 @@ int n = nums.size();
             while(i+1 < n && nums[i] == nums[i+1]) i++;
         }
 return output;
+
+
+
+// Problems:
+
+https://leetcode.com/list/?selectedList=p307wzce
+https://leetcode.com/problems/majority-element/submissions/1157557127/
+https://leetcode.com/problems/contiguous-array/?envType=list&envId=p307wzce
+https://leetcode.com/problems/longest-palindrome/submissions/1157463566/?envType=list&envId=p307wzce
+https://leetcode.com/problems/4sum-ii/
+https://leetcode.com/problems/k-diff-pairs-in-an-array/
+https://leetcode.com/problems/contiguous-array/description/
+https://leetcode.com/problems/longest-palindrome/description/
+https://leetcode.com/problems/longest-substring-without-repeating-characters/
+https://leetcode.com/problems/4sum/
+https://leetcode.com/problems/two-sum/description/
