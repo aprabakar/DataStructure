@@ -10,7 +10,19 @@ root->left = rtree;
 root->right = ltree;
 return root;
 
-
+// trim tree
+//https://leetcode.com/problems/trim-a-binary-search-tree/
+TreeNode* trimBST(TreeNode* root, int low, int high) {
+if (!root) return root;
+if (root->val >= L && root->val <= R) {
+    root->left = trimBST(root->left, L, R);
+    root->right = trimBST(root->right, L, R);
+    return root;
+}
+if (root->val < L)
+    return trimBST(root->right, L, R);
+return trimBST(root->left, L, R);
+}
 
 // Tree traversal with pair
 TreeNode* ans = NULL;
