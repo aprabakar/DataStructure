@@ -1,5 +1,11 @@
 int val = stoi(tokens[i]);
 
+vector<vector<int>> visited(grid.size(), vector<int>(grid[0].size(), 0));
+
+bool isNotValid(int i, int j, int m, int n){
+    return (i <0 || j<0 || i>=m || j>=n);
+}
+
 // Tuples
 stack<tuple<int,int, int>> st;
 vector<int> ans(temperatures.size());
