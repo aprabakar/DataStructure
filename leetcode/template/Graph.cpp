@@ -32,3 +32,12 @@ bool isNotValid(int i, int j, int m, int n){
 
         return ans;
     }
+
+
+
+
+
+//Problems:
+https://leetcode.com/problems/pacific-atlantic-water-flow
+https://leetcode.com/problems/surrounded-regions/description/
+https://leetcode.com/problems/rotting-oranges
