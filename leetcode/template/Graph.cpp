@@ -56,91 +56,91 @@ bool isNotValid(int i, int j, int m, int n){
 
 // Adjacency list
 
-bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-int m = prerequisites.size();
-unordered_map<int, vector<int>> adjList;
-vector<int> visited(numCourses, 0);
-
-if(prerequisites.size() == 0){
-    return true;
-}
-
-for(int i=0; i < m ; i++) {
-    vector<int> list;
-    if(adjList.find(prerequisites[i][0]) == adjList.end()){
-        list.push_back(prerequisites[i][1]);
-    }else{
-        list = adjList[prerequisites[i][0]];
-        list.push_back(prerequisites[i][1]);
-    }
-
-    adjList[prerequisites[i][0]] = list;
-}
-
-for(int i=0; i < numCourses ; i++){
-    for(auto node : adjList[i]){ 
-        if(visited[node] == 0){
-            if(!dfs(adjList, node, visited)){
-                return false;
-            }
-        }
-    }            
-}        
-
-return true;        
-}
+   bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+	int m = prerequisites.size();
+	unordered_map<int, vector<int>> adjList;
+	vector<int> visited(numCourses, 0);
+	
+	if(prerequisites.size() == 0){
+	    return true;
+	}
+	
+	for(int i=0; i < m ; i++) {
+	    vector<int> list;
+	    if(adjList.find(prerequisites[i][0]) == adjList.end()){
+	        list.push_back(prerequisites[i][1]);
+	    }else{
+	        list = adjList[prerequisites[i][0]];
+	        list.push_back(prerequisites[i][1]);
+	    }
+	
+	    adjList[prerequisites[i][0]] = list;
+	}
+	
+	for(int i=0; i < numCourses ; i++){
+	    for(auto node : adjList[i]){ 
+	        if(visited[node] == 0){
+	            if(!dfs(adjList, node, visited)){
+	                return false;
+	            }
+	        }
+	    }            
+	}        
+	
+	return true;        
+   }
 
 
 // BFS and Topological sorting
 
-vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-// Kahn's algo / topological sort
-vector<int> inDegree(numCourses, 0);
-vector<int> ans;
-queue<int> q;
-unordered_map<int, vector<int>> adjList;
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+	// Kahn's algo / topological sort
+	vector<int> inDegree(numCourses, 0);
+	vector<int> ans;
+	queue<int> q;
+	unordered_map<int, vector<int>> adjList;
+	
+	for(int i=0; i < prerequisites.size(); i++){
+	    vector<int> list;
+	    if(adjList.find(prerequisites[i][1]) == adjList.end()){
+	        list.push_back(prerequisites[i][0]);
+	    }else{
+	        list = adjList[prerequisites[i][1]];
+	        list.push_back(prerequisites[i][0]);
+	    }   
+	    adjList[prerequisites[i][1]] = list; 
+	    inDegree[prerequisites[i][0]] += 1;      
+	}
+	
+	for(int i=0 ; i < numCourses; i++){
+	    if(inDegree[i] == 0){
+	        q.push(i);
+	    }
+	}
+	
+	while(!q.empty()){
+	    int node = q.front();
+	    q.pop();
+	    ans.push_back(node);
+	
+	    for(auto it : adjList[node]){
+	        --inDegree[it];
+	        if(inDegree[it] == 0){
+	            q.push(it);
+	        }
+	    }
+   }
 
-for(int i=0; i < prerequisites.size(); i++){
-    vector<int> list;
-    if(adjList.find(prerequisites[i][1]) == adjList.end()){
-        list.push_back(prerequisites[i][0]);
-    }else{
-        list = adjList[prerequisites[i][1]];
-        list.push_back(prerequisites[i][0]);
-    }   
-    adjList[prerequisites[i][1]] = list; 
-    inDegree[prerequisites[i][0]] += 1;      
-}
-
-for(int i=0 ; i < numCourses; i++){
-    if(inDegree[i] == 0){
-        q.push(i);
-    }
-}
-
-while(!q.empty()){
-    int node = q.front();
-    q.pop();
-    ans.push_back(node);
-
-    for(auto it : adjList[node]){
-        --inDegree[it];
-        if(inDegree[it] == 0){
-            q.push(it);
-        }
-    }
-}
-
-if(ans.size() == numCourses){
-    return ans;
-}
-
-return {};
-}
+	if(ans.size() == numCourses){
+	    return ans;
+	}
+	
+	return {};
+  }
 
 //Djikstra's
 
-int minScore(int n, vector<vector<int>>& roads) {
+  int minScore(int n, vector<vector<int>>& roads) {
         priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> minHeap;
         vector<int> dist(n+1, INT_MAX);
         vector<vector<pair<int,int>>> graph(n+1);
@@ -172,7 +172,7 @@ int minScore(int n, vector<vector<int>>& roads) {
 
 //Bellman ford
 
-vector<int> bellman_ford(int V, vector<vector<int>>& edges, int S) {
+   vector<int> bellman_ford(int V, vector<vector<int>>& edges, int S) {
         vector<int> dist(V, 1e8);
         dist[S] = 0;
         for (int i = 0; i < V - 1; i++) {
@@ -197,9 +197,10 @@ vector<int> bellman_ford(int V, vector<vector<int>>& edges, int S) {
 
 
         return dist;
-	}
+   }
 
-    // prim's algo
+// prim's algo
+
     int distance(vector<int>a,vector<int>b){
         return abs(a[1]-b[1]) + abs(a[0]-b[0]);
     }
