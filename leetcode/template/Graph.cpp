@@ -151,3 +151,4 @@ https://leetcode.com/problems/alien-dictionary
 https://leetcode.com/discuss/interview-question/4276157/Shortest-path-in-Directed-Acyclic-Graph/
 https://leetcode.com/problems/word-ladder
 https://leetcode.com/problems/word-ladder-ii/
+https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/
