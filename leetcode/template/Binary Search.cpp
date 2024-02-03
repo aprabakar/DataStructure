@@ -151,3 +151,7 @@ https://leetcode.com/problems/koko-eating-bananas/description/
 https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/description/
 https://leetcode.com/problems/search-in-rotated-sorted-array/description/
 https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
+https://leetcode.com/problems/time-based-key-value-store/description/
+https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
+https://leetcode.com/problems/maximum-number-of-removable-characters/
+https://leetcode.com/problems/search-suggestions-system/
