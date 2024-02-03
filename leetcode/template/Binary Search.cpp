@@ -155,3 +155,7 @@ https://leetcode.com/problems/time-based-key-value-store/description/
 https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 https://leetcode.com/problems/maximum-number-of-removable-characters/
 https://leetcode.com/problems/search-suggestions-system/
+https://leetcode.com/problems/split-array-largest-sum/description/
+https://leetcode.com/problems/median-of-two-sorted-arrays/description/
+https://leetcode.com/problems/magnetic-force-between-two-balls/description/
+https://leetcode.com/problems/minimize-max-distance-to-gas-station/description/
