@@ -48,3 +48,8 @@ for(int i = 0; i<N; i++){
 sort(cars.begin(), cars.end(), [](const Car& a, const Car& b){
     return a.pos<b.pos;
 });
+
+//binary search:
+int insertIndex = 0;
+beginSearch = lower_bound(products.begin();, products.end(), prefix);
+insertIndex = beginSearch - products.begin();
