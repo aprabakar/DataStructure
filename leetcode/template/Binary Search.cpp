@@ -104,6 +104,41 @@ bool searchMatrix(vector<vector<int>>& matrix, int target) {
       return false;
 }
 
+// search duplicate with rotation
+//https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
+int search(vector<int>& nums, int target) {
+        int st =0 , en = nums.size()-1, mid;
+        
+        if(nums.size() == 1){
+            return (nums[0] == target) ? 0 : -1;
+        }
+        
+        while(st < en){
+            mid = (st + en) / 2;
+        
+            if(nums[mid] == target){
+                return mid;
+            }
+        
+            if(nums[st] == target){
+                return st;
+            }
+        
+            if(nums[en] == target){
+                return en;
+            }
+        
+            if(nums[mid] > nums[st] && !(target<nums[mid] && target>nums[st]) || 
+                (nums[mid] < nums[en] && (target>nums[mid] && target<nums[en]))){
+                st = mid+1;
+            }else{
+                en = mid-1;
+            }
+        }
+        
+        return -1;
+}
+
 
 //Problems:
 
@@ -112,3 +147,7 @@ https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/descriptio
 https://leetcode.com/problems/find-peak-element/description/
 https://leetcode.com/problems/successful-pairs-of-spells-and-potions/description/
 https://leetcode.com/problems/search-a-2d-matrix/
+https://leetcode.com/problems/koko-eating-bananas/description/
+https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/description/
+https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
