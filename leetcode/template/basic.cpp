@@ -6,6 +6,14 @@ bool isNotValid(int i, int j, int m, int n){
     return (i <0 || j<0 || i>=m || j>=n);
 }
 
+//copy from set to vector:
+set<vector<int>> ans;
+vector<vector<int>> result(ans.begin(), ans.end());
+//second way
+for (it = myset.begin(); it != myset.end(); ++it) {
+    result.push_back(*it);
+}
+
 // Tuples
 stack<tuple<int,int, int>> st;
 vector<int> ans(temperatures.size());
