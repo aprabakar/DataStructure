@@ -58,3 +58,13 @@ int climbStairs(int n) {
 
     return prev2;
 }
+
+//Problems:
+//1D
+https://leetcode.com/problems/house-robber/
+https://leetcode.com/problems/house-robber-ii/
+https://leetcode.com/problems/decode-ways/
+
+//2D
+https://leetcode.com/problems/longest-palindromic-substring/
+https://leetcode.com/problems/palindromic-substrings/
