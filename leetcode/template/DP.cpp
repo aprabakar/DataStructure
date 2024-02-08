@@ -188,6 +188,37 @@ https://leetcode.com/problems/cherry-pickup-ii/description/
     return front[0][m - 1];  
 }
 
+int n;
+int target;
+map<pair<int,int>,int> cache;
+int DFS(vector<int>& nums,int currSum, int i)
+{
+    auto find = cache.find({i,currSum});
+    
+    if (find != cache.end())
+        return find->second;
+    
+    if (i == n && currSum == target)
+    {
+        return 1;
+    }
+    if(i >= n)
+        return 0;
+
+    return cache[{i,currSum}] = DFS(nums,currSum + nums[i],i + 1) + DFS(nums,currSum - nums[i],i + 1);
+}
+
+int findTargetSumWays(vector<int>& nums, int S) 
+{
+    n = nums.size();
+    target = S;
+    
+    if(n == 0)
+        return 0;
+    
+    return DFS(nums,0,0);
+}
+
 //Problems:
 //1D
 https://leetcode.com/problems/house-robber/
@@ -198,6 +229,7 @@ https://leetcode.com/problems/maximum-product-subarray/
 https://leetcode.com/problems/longest-increasing-subsequence/
 https://leetcode.com/problems/partition-equal-subset-sum/
 
+
 //2D
 https://leetcode.com/problems/longest-palindromic-substring/
 https://leetcode.com/problems/palindromic-substrings/
@@ -206,6 +238,16 @@ https://leetcode.com/problems/unique-paths-ii/
 https://leetcode.com/problems/minimum-path-sum/description/
 https://leetcode.com/problems/minimum-falling-path-sum/
 https://leetcode.com/problems/cherry-pickup-ii/description/
+https://leetcode.com/problems/target-sum/description/
+https://leetcode.com/problems/coin-change-ii/
+https://leetcode.com/problems/longest-common-subsequence/description/
+https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/
+https://leetcode.com/problems/longest-palindromic-subsequence/description/
+https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/
+https://leetcode.com/problems/delete-operation-for-two-strings/description/
+https://leetcode.com/problems/shortest-common-supersequence/
+https://leetcode.com/problems/distinct-subsequences/description/
+https://leetcode.com/problems/edit-distance/
 
 
 //3D
