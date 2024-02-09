@@ -228,6 +228,12 @@ https://leetcode.com/problems/coin-change/description/
 https://leetcode.com/problems/maximum-product-subarray/
 https://leetcode.com/problems/longest-increasing-subsequence/
 https://leetcode.com/problems/partition-equal-subset-sum/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 
 
 //2D
@@ -252,3 +258,6 @@ https://leetcode.com/problems/edit-distance/
 
 //3D
 https://leetcode.com/problems/cherry-pickup-ii/description/
+
+//1d with binary search
+https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/
