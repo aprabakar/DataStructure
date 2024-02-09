@@ -234,6 +234,7 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+https://leetcode.com/problems/longest-increasing-subsequence/description/
 
 
 //2D
