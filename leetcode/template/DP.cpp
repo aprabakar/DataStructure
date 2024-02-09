@@ -258,6 +258,7 @@ https://leetcode.com/problems/delete-operation-for-two-strings/description/
 https://leetcode.com/problems/shortest-common-supersequence/
 https://leetcode.com/problems/distinct-subsequences/description/
 https://leetcode.com/problems/edit-distance/
+https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
 
 
 //3D
