@@ -235,6 +235,9 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 https://leetcode.com/problems/longest-increasing-subsequence/description/
+https://leetcode.com/problems/longest-string-chain/
+https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/description/
+https://leetcode.com/problems/number-of-longest-increasing-subsequence/
 
 
 //2D
