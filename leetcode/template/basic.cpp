@@ -61,3 +61,53 @@ sort(cars.begin(), cars.end(), [](const Car& a, const Car& b){
 int insertIndex = 0;
 beginSearch = lower_bound(products.begin();, products.end(), prefix);
 insertIndex = beginSearch - products.begin();
+
+unordered_map<int, int> q;
+
+//1st way:
+q.insert(make_pair(3, 7));
+
+//2nd way:
+q[3]=7;
+
+//3rd way:
+q.emplace(3, 7);
+
+if(q.find(3) == q.end()){
+   cout<<"This key does not exists"<<endl; 
+}
+
+//1st way:
+q.erase(ourkey);   // deletion by key
+
+//2nd way:
+q.erase(z);      // deletion by iterator
+
+for(auto z=q.begin();z!=q.end();z++){   //traversing from beginning till end
+     cout<<"key is "<<z->first<<" and the value is "<<z->second<<endl; 
+}
+
+for(auto &it: mp){
+    ans.push_back(it.second);
+}
+
+for(auto z=q.rbegin();z!=q.rend();z++){   //traversing from end till beginning
+     cout<<"key is "<<z->first<<" and the value is "<<z->second<<endl; 
+}
+
+// set implementation
+
+unordered_set<int> set;
+unordered_set<int> result;
+for(int i=0 ;i < nums1.size(); i++){
+    set.insert(nums1[i]);
+}
+
+for(int i=0 ;i < nums2.size(); i++){
+    if(set.count(nums2[i]) > 0){
+        result.insert(nums2[i]);
+    }
+}
+
+return vector<int>(result.begin() , result.end()); 
+
