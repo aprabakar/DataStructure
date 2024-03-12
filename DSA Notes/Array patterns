@@ -1,0 +1,70 @@
+- Hashing
+- two iterations
+- two pointers, three pointers
+- In place operation
+- sliding window
+- sorting + sliding window
+- kadene's algo
+- moore's voting algo
+- prefix sum
+- prefix + suffix
+
+
+
+
+
+
+
+
+
+
+EASY
+https://leetcode.com/problems/two-sum/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+https://leetcode.com/problems/plus-one/
+https://leetcode.com/problems/move-zeroes/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+https://leetcode.com/problems/running-sum-of-1d-array/
+https://leetcode.com/problems/find-pivot-index/
+https://leetcode.com/problems/majority-element/
+https://leetcode.com/problems/fibonacci-number/
+https://leetcode.com/problems/squares-of-a-sorted-array/
+https://leetcode.com/problems/pascals-triangle/
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+
+MEDIUM
+https://leetcode.com/problems/merge-intervals/
+https://leetcode.com/problems/3sum/
+https://leetcode.com/problems/product-of-array-except-self/
+https://leetcode.com/problems/insert-delete-getrandom-o1/
+https://leetcode.com/problems/subarray-sum-equals-k/
+https://leetcode.com/problems/next-permutation/
+https://leetcode.com/problems/spiral-matrix/
+https://leetcode.com/problems/container-with-most-water/
+https://leetcode.com/problems/rotate-image/
+https://leetcode.com/problems/word-search/
+https://leetcode.com/problems/3sum-closest/
+https://leetcode.com/problems/game-of-life/
+https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/
+https://leetcode.com/problems/4sum/
+https://leetcode.com/problems/find-the-duplicate-number/
+https://leetcode.com/problems/combination-sum/
+https://leetcode.com/problems/jump-game-ii/
+https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/
+https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/
+https://leetcode.com/problems/max-area-of-island/
+https://leetcode.com/problems/find-all-duplicates-in-an-array/
+https://leetcode.com/problems/k-diff-pairs-in-an-array/
+https://leetcode.com/problems/subsets/
+https://leetcode.com/problems/invalid-transactions/
+https://leetcode.com/problems/jump-game/
+https://leetcode.com/problems/subarray-sums-divisible-by-k/
+
+
+HARD
+https://leetcode.com/problems/first-missing-positive/
+https://leetcode.com/problems/largest-rectangle-in-histogram/
+https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+https://leetcode.com/problems/max-value-of-equation/
