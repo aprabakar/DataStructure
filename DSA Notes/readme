@@ -1,0 +1,35 @@
+Contains the template and patterns of all the ds and algos
+
+Data structures:
+
+Linked list
+Arrays
+Matrix
+Strings
+Stack
+Queue
+Tree
+Heap
+Disjoint set
+Graph
+Tries
+Segment tree
+
+Algorithms:
+
+Maths
+Hash table
+Binary search
+Two pointer
+Sliding window
+Greedy
+Prefix sum
+Recursion
+Backtrack
+Dynamic programming
+DFS
+BFS
+Divide and conquer
+Sorting
+Design
+Bit manipulation
