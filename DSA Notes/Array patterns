@@ -1,13 +1,17 @@
 - Hashing
+- Hashing using range index modulo (https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/description/)
 - two iterations
 - two pointers, three pointers
-- In place operation
+- In place operation (https://leetcode.com/problems/find-the-duplicate-number/description/)
 - sliding window
 - sorting + sliding window
 - kadene's algo
 - moore's voting algo
 - prefix sum
 - prefix + suffix
+- back tracking
+- dynamic programming
+
 
 
 
