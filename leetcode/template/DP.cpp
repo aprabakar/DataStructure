@@ -238,9 +238,12 @@ https://leetcode.com/problems/longest-increasing-subsequence/description/
 https://leetcode.com/problems/longest-string-chain/
 https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/description/
 https://leetcode.com/problems/number-of-longest-increasing-subsequence/
+https://leetcode.com/problems/largest-divisible-subset/submissions/1210319704/
 
 
 //2D
+https://leetcode.com/problems/longest-common-subsequence/description/
+https://leetcode.com/problems/longest-palindromic-subsequence/description/
 https://leetcode.com/problems/longest-palindromic-substring/
 https://leetcode.com/problems/palindromic-substrings/
 https://leetcode.com/problems/unique-paths/description/
@@ -250,9 +253,7 @@ https://leetcode.com/problems/minimum-falling-path-sum/
 https://leetcode.com/problems/cherry-pickup-ii/description/
 https://leetcode.com/problems/target-sum/description/
 https://leetcode.com/problems/coin-change-ii/
-https://leetcode.com/problems/longest-common-subsequence/description/
 https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/
-https://leetcode.com/problems/longest-palindromic-subsequence/description/
 https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/description/
 https://leetcode.com/problems/delete-operation-for-two-strings/description/
 https://leetcode.com/problems/shortest-common-supersequence/
@@ -260,6 +261,8 @@ https://leetcode.com/problems/distinct-subsequences/description/
 https://leetcode.com/problems/edit-distance/
 https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
 
+
+https://takeuforward.org/dynamic-programming/striver-dp-series-dynamic-programming-problems/
 
 //3D
 https://leetcode.com/problems/cherry-pickup-ii/description/
